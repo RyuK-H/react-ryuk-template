@@ -20,6 +20,7 @@ module.exports = {
   },
   rules: {
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
+    "react/destructuring-assignment": 0,
     "@typescript-eslint/explicit-function-return-type": 0,
     "@typescript-eslint/no-var-requires": 0,
     "import/extensions": [
