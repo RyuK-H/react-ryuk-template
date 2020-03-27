@@ -39,7 +39,6 @@ module.exports = {
         "tabWidth": 2,
         "trailingComma": "all",
         "printWidth": 80,
-        "arrowParens": "avoid",
         "proseWrap": "preserve",
         "requirePragma": false,
       }

@@ -13,7 +13,8 @@
     }
   },
   "lint-staged": {
-    "*.{ts,tsx,json,css,md}": [
+    "*.{ts,tsx}": [
+      "eslint --fix",
       "prettier --write",
       "git add"
     ]
