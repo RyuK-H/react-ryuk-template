@@ -6,6 +6,26 @@
   ],
   "plugins": [
     ["@babel/plugin-proposal-decorators", { "legacy": true }],
-    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    [
+      "module-resolver",
+      {
+        "extensions": [
+          ".ts", "tsx"
+        ],
+        "root": [
+          "./"
+        ],
+        "alias": {
+          "@root": "./src",
+          "@components": "./src/components",
+          "@atoms": "./src/components/atoms",
+          "@molecules": "./src/components/molecules",
+          "@organisms": "./src/components/organisms",
+          "@pages": "./src/pages",
+          "@styles": "./src/styles"
+        }
+      }
+    ]
   ]
 }
